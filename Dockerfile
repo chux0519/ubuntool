@@ -15,4 +15,7 @@ RUN apt-get install -y \
 RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 
 # install node.js
-RUN /bin/bash -c 'source $HOME/.nvm/nvm.sh; nvm install v10'
+RUN /bin/bash -c 'source $HOME/.nvm/nvm.sh; nvm install v10;'
+
+# install fx
+RUN /bin/bash -c 'source $HOME/.nvm/nvm.sh; npm install -g fx'
